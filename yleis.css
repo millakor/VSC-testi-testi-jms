@@ -1,0 +1,116 @@
+/* Tässä tiedostossa määritellään koko sivuston ulkoasu */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;   
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-size: 100%;
+  height: 100%;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 50%;
+ 
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(153, 0, 46);
+  }
+
+/* Style the topnav links */
+.topnav a {
+  font-size: 30px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  color:rgb(255, 191, 0);
+}
+
+/* Style the content */
+.content {
+  background-color: rgb(222, 222, 222);
+   padding: 20px;
+      /* height: 200px;  Should be removed. Only for demonstration */
+}
+
+.content h1 {
+  color: rgb(153, 0, 46)
+}
+.content h2 {
+  color: rgb(153, 0, 46)
+}
+
+/*Column style*/
+.column {
+  float: left;
+  background-color: rgb(153, 0, 46);
+  width: 10%;
+  padding: 10px;
+  height: 150px; 
+  font-size: 20px
+}
+
+.column.middle {
+  float: center;
+  background-color: rgb(153, 0, 46);
+  width: 20%;
+  padding: 10px;
+  height: 150px; 
+  font-size: 20px
+}
+
+.column.right {
+  float: left;
+  background-color: rgb(153, 0, 46);
+  width: 70%;
+  padding: 10px;
+  height: 150px; 
+  font-size: 20px
+}
+
+.column p{
+  color: #f2f2f2;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 14px 30px;
+}
